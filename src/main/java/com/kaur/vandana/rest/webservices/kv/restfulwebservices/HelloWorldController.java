@@ -7,22 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
-    //method would be GET
+    //method - GET
     //URI - /hello-world
-    //method - return a simple string "Hello World"
     //@RequestMapping(method = RequestMethod.GET, path = "/hello-world")
     @GetMapping(path = "/hello-world")
     public String helloWorld() {
+        //return a simple string "Hello World"
         return "Hello World! ";
     }
-
 
     //method will return a bean
     @GetMapping(path = "/hello-world-bean")
     public HelloWorldBean helloWorldBean() {
-        return new HelloWorldBean("this is a hello world bean.");
+        return new HelloWorldBean("This is Hello World Bean.");
     }
-
-
-
 }

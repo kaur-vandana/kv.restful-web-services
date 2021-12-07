@@ -8,14 +8,14 @@ we can have different representations for each resource.
 
 example : 
 
-POST     /users         -- create a user
-GET      /users         -- retrieves all users
-GET      /users/1       -- retrieve a user
-DELETE   /users/1       -- delete a user
+- POST     /users         -- create a user
+- GET      /users         -- retrieves all users
+- GET      /users/1       -- retrieve a user
+- DELETE   /users/1       -- delete a user
 
-GET     /users/{id}/posts               -- retrieve all posts for a user
-POST    /users/{id}/posts               -- create posts for a user
-GET     /users/{id}/posts/{post_id}     -- retrieve details of a post
+- GET     /users/{id}/posts               -- retrieve all posts for a user
+- POST    /users/{id}/posts               -- create posts for a user
+- GET     /users/{id}/posts/{post_id}     -- retrieve details of a post
 
 # @RestController
 
