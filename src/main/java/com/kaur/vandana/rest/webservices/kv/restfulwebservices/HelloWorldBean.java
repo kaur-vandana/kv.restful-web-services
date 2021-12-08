@@ -8,6 +8,8 @@ public class HelloWorldBean {
         this.message = message;
     }
 
+    /*Whitelabel Error Page
+    occurs if you forget to getters, setters*/
     public String getMessage() {
         return message;
     }
