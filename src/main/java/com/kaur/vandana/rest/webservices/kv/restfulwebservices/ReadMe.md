@@ -36,7 +36,7 @@ example :
 - example : @RequestMapping(method = RequestMethod.GET, path = "/hello-world")
 
 # @GetMapping
-- example :  @GetMapping(path = "/hello-world")
+- example :  @GetMapping(path = "/hello-world") 
 
 
 
