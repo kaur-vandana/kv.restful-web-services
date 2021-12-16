@@ -1,6 +1,7 @@
-package com.kaur.vandana.rest.webservices.kv.restfulwebservices;
+package com.kaur.vandana.rest.webservices.kv.restfulwebservices.helloworld;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 //you need to tell spring that this is a controller
@@ -20,5 +21,11 @@ public class HelloWorldController {
     @GetMapping(path = "/hello-world-bean")
     public HelloWorldBean helloWorldBean() {
         return new HelloWorldBean("This is Hello World Bean.");
+    }
+
+    //hello-world/path-variable/Vandana
+    @GetMapping(path = "/hello-world/path-variable/{name}")
+    public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
+        return new HelloWorldBean(String.format("Hello World, %s",name));
     }
 }

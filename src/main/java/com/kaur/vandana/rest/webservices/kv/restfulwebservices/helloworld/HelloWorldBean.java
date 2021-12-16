@@ -1,4 +1,4 @@
-package com.kaur.vandana.rest.webservices.kv.restfulwebservices;
+package com.kaur.vandana.rest.webservices.kv.restfulwebservices.helloworld;
 
 public class HelloWorldBean {
 
