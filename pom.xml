@@ -26,6 +26,21 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+<!--	we need to explicily add validations as it is not part of spring boot anymore-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+<!--		HATEOAS - Hypermedia as the Engine of Application State
+ The representations returned for REST resources contain not only data but also links to related resources.
+ we use EntityModel for doing so-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+
+<!--	Internationalization - i18n	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
