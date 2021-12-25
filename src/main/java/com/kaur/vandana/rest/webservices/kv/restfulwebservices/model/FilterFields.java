@@ -1,5 +1,8 @@
 package com.kaur.vandana.rest.webservices.kv.restfulwebservices.model;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
+
+@JsonFilter("DynamicFilterId")
 public class FilterFields {
     private String name;
     private String age;
