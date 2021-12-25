@@ -1,10 +1,19 @@
-- What is dispatcher servlet?
-- Who is configuring dispatcher servlet?
-- What does dispatcher servlet do?
-- How does the HelloWorldBean object get converted to JSON?
+### Swagger UI :  
+http://localhost:8080/swagger-ui/index.html
+### OpenAPI definition :  
+http://localhost:8080/v3/api-docs
 
+### Actuator
+http://localhost:8080/actuator 
 
-- Mapping servlet: 'dispatcherServlet' to [/]
-- Mapped "{[/hello-world],methods=[GET]}" onto HelloWorldBean
-- Mapped "{[/error]}" onto
-- Mapped "{[/error]},produces=[text/html]" onto
+### HAL Explorer
+http://localhost:8080/explorer/index.html#
+example :
+http://localhost:8080/explorer/index.html#uri=/actuator
+http://localhost:8080/explorer/index.html#uri=/users 
+
+----------------------------------------------------------------------------------------------
+
+[reference]
+1. https://springdoc.org/
+2. https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
