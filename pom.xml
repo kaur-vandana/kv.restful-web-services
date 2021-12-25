@@ -38,6 +38,12 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<!--		spring security - basic authentication
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>-->
+
 		<!--		HAL explorer-->
 		<dependency>
 			<groupId>org.springframework.data</groupId>

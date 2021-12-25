@@ -1,4 +1,4 @@
-package com.kaur.vandana.rest.webservices.kv.restfulwebservices.model;
+package com.kaur.vandana.rest.webservices.kv.restfulwebservices.model.filtering;
 
 import com.fasterxml.jackson.annotation.JsonFilter;
 
