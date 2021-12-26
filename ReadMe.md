@@ -12,6 +12,16 @@ example :
 http://localhost:8080/explorer/index.html#uri=/actuator
 http://localhost:8080/explorer/index.html#uri=/users 
 
+### h2 console
+http://localhost:8080/h2-console
+
+verify & connect
+jdbc url =jdbc:h2:mem:testdb
+username=sa
+password=password
+
+type query "select * from user" & Run
+
 ------------------------------------------------------------------------------------------------------------------------
 ### Topics Covered
 
@@ -26,11 +36,8 @@ http://localhost:8080/explorer/index.html#uri=/users
 - Filtering - Static and dynamic
 - Versioning - using - URI, query parameter, headers and produces
 - Basic Authentication
+- JPA 
 
 ------------------------------------------------------------------------------------------------------------------------
-
-[reference]
-1. https://springdoc.org/
-2. https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
-
+Hibernate: create table user (id integer not null, birth_date timestamp, name varchar(255), primary key (id))
 ------------------------------------------------------------------------------------------------------------------------

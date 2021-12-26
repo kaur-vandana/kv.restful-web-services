@@ -55,6 +55,13 @@ example :
 
 
 ------------------------------------------------------------------------------------------------------------------------
+- [reference]
+1. https://springdoc.org/
+2. https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
+3. https://www.baeldung.com/spring-boot-h2-database
+ 
+------------------------------------------------------------------------------------------------------------------------
+
 - What is dispatcher servlet?
 - Who is configuring dispatcher servlet?
 - What does dispatcher servlet do?
