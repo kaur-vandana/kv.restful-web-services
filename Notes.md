@@ -49,16 +49,62 @@ example :
 ### @GetMapping
 - example :  @GetMapping(path = "/hello-world")
 
-### @RestController
 
+------------------------------------------------------------------------------------------------------------------------
+### RESPONSE STATUS
 
+1. 200 - SUCCESS
+2. 404 - REQUEST NOT FOUND
+3. 400 - BAD REQUEST
+4. 201 - CREATED
+5. 401 - UNAUTHORIZED
+6. 500 - SERVER ERROR
 
+------------------------------------------------------------------------------------------------------------------------
+### Richardson Maturity Model
+
+LEVEL 0 - Expose SOAP web services in REST style
+
+- http://server/{action}
+- http://server/getPosts
+- http://server/deletePosts
+
+LEVEL 1 - Expose RESOURCEs with proper URI
+
+- http://server/accounts
+- http://server/accounts/10
+
+LEVEL 2 - LEVEL 1 + proper use of HTTP methods
+ 
+- GET http://server/accounts
+- POST http://server/accounts
+- DELETE http://server/accounts/10
+
+LEVEL 3 - LEVEL 2 + HATEOAS
+DATA + next possible action (example using links)
+
+------------------------------------------------------------------------------------------------------------------------
+### BEST PRACTICES
+
+1. Consumer First 
+(who your consumer are? is it a web app or mobile app? 
+what is the requirement? what is your customers need? 
+will they will be understand the resources naming?)
+2. API documentation (example with Swagger)
+3. Make best use of HTTP, request methods and ensure you are sending a proper response back
+4. Ensure there is no secure info in your URI
+5. Always use plurals example /users
+6. Use nouns for resources (example /users) and for any exceptions define a consistent approach (example /search)
 
 ------------------------------------------------------------------------------------------------------------------------
 - [reference]
-1. https://springdoc.org/
-2. https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
-3. https://www.baeldung.com/spring-boot-h2-database
+
+1. Learn Spring Boot : https://www.baeldung.com/spring-boot
+2. springdoc-openapi v1.6.3 : https://springdoc.org/
+3. Production-ready Features : https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
+4. Spring Boot With H2 Database : https://www.baeldung.com/spring-boot-h2-database
+5. Spring Boot with Hibernate : https://www.baeldung.com/spring-boot-hibernate
+6. Spring BeanCreationException : https://www.baeldung.com/spring-beancreationexception 
  
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -72,3 +118,5 @@ example :
 - Mapped "{[/hello-world],methods=[GET]}" onto HelloWorldBean
 - Mapped "{[/error]}" onto
 - Mapped "{[/error]},produces=[text/html]" onto
+
+------------------------------------------------------------------------------------------------------------------------
