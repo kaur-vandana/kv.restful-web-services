@@ -24,6 +24,7 @@ Marks a property, method parameter or method return type for validation cascadin
 Constraints defined on the object and its properties are be validated when the property, 
 method parameter or method return type is validated.
 
+------------------------------------------------------------------------------------------------------------------------
 # REST
 REpresentational State Transfer, REST is a style of software architecture for distributed hypermedia systems
 - REST is just a style of how you design your resources and how you expose them using HTTP.
@@ -96,16 +97,6 @@ will they will be understand the resources naming?)
 5. Always use plurals example /users
 6. Use nouns for resources (example /users) and for any exceptions define a consistent approach (example /search)
 
-------------------------------------------------------------------------------------------------------------------------
-- [reference]
-
-1. Learn Spring Boot : https://www.baeldung.com/spring-boot
-2. springdoc-openapi v1.6.3 : https://springdoc.org/
-3. Production-ready Features : https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
-4. Spring Boot With H2 Database : https://www.baeldung.com/spring-boot-h2-database
-5. Spring Boot with Hibernate : https://www.baeldung.com/spring-boot-hibernate
-6. Spring BeanCreationException : https://www.baeldung.com/spring-beancreationexception 
- 
 ------------------------------------------------------------------------------------------------------------------------
 
 - What is dispatcher servlet?
