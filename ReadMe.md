@@ -24,6 +24,7 @@ type query "select * from user" & Run
 
 ------------------------------------------------------------------------------------------------------------------------
 ### Topics Covered
+
 - Learn Spring Boot
   - https://www.baeldung.com/spring-boot
 
@@ -36,11 +37,17 @@ type query "select * from user" & Run
 - Exception handling
   - https://www.baeldung.com/exception-handling-for-rest-with-spring
 
+- Validation in Spring Boot
+  - https://www.baeldung.com/spring-boot-bean-validation
+
 - HATEOAS
+  - https://www.baeldung.com/spring-hateoas-tutorial 
 
 - Internationalization
+  - https://www.baeldung.com/spring-boot-internationalization
 
 - content Negotiation
+  - https://www.baeldung.com/jackson-xml-serialization-and-deserialization 
 
 - Api Documentation (Swagger) - Documenting a Spring REST API Using OpenAPI 3.0
   - https://www.baeldung.com/spring-rest-openapi-documentation
@@ -50,6 +57,7 @@ type query "select * from user" & Run
   - Production-ready Features : https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
   
 - HAL Explorer
+  - https://www.baeldung.com/spring-rest-hal
 
 - Filtering - Static and dynamic
 
