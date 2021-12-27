@@ -1,14 +1,26 @@
+# RESTful Web Services with Spring and Spring Boot
+
 ### Topics Covered
-2. Develop and design RESTful web services with Spring Boot
+1. Develop and design RESTful web services with Spring Boot
+2. How to design Resources and GET, POST and DELETE operations?
 3. How to version your RESTful Web Services
 4. How to document RESTful Web Services with Swagger
-5. How to monitor RESTful Services with Spring Boot Actuator
-6. IMPLEMENT Exception Handling, Validation, HATEOAS and filtering for RESTful Web Services.
-7. The best practices in designing RESTful web services
+5. How to use Postman to execute RESTful Service Requests?
+6. How to monitor RESTful Services with Spring Boot Actuator
+7. IMPLEMENT Exception Handling
+8. IMPLEMENT Validation 
+9. IMPLEMENT HATEOAS 
+10. IMPLEMENT filtering for RESTful Web Services.
+11. How to implement basic authentication with Spring Security? 
+12. How to connect RESTful Services to a backend with JPA?
+13. The best practices in designing RESTful web services
 
 ------------------------------------------------------------------------------------------------------------------------
+# Useful Links
+
 ### Swagger UI :  
 http://localhost:8080/swagger-ui/index.html
+
 ### OpenAPI definition :  
 http://localhost:8080/v3/api-docs
 
@@ -30,6 +42,10 @@ verify & connect
 type query & Run
 - "select * from user"
 - "select * from post"
+
+### Postman
+- Download and install latest postman :  http://www.getpostman.com and 
+- import the postman collection given in the repo
 
 ------------------------------------------------------------------------------------------------------------------------
 ### reference
@@ -82,5 +98,26 @@ type query & Run
   - Spring BeanCreationException : https://www.baeldung.com/spring-beancreationexception
 
 ------------------------------------------------------------------------------------------------------------------------
-Hibernate: create table user (id integer not null, birth_date timestamp, name varchar(255), primary key (id))
+# Hibernate:
+
+### Table Structure
+
+create table user (
+id integer not null,
+birth_date timestamp,
+name varchar(255),
+primary key (id)
+);
+
+create table post (
+id integer not null,
+description varchar(255),
+user_id integer,
+primary key (id)
+);
+
+alter table post
+add constraint post_to_user_foreign_key
+foreign key (user_id) references user;
+
 ------------------------------------------------------------------------------------------------------------------------
