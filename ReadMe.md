@@ -1,3 +1,12 @@
+### Topics Covered
+2. Develop and design RESTful web services with Spring Boot
+3. How to version your RESTful Web Services
+4. How to document RESTful Web Services with Swagger
+5. How to monitor RESTful Services with Spring Boot Actuator
+6. IMPLEMENT Exception Handling, Validation, HATEOAS and filtering for RESTful Web Services.
+7. The best practices in designing RESTful web services
+
+------------------------------------------------------------------------------------------------------------------------
 ### Swagger UI :  
 http://localhost:8080/swagger-ui/index.html
 ### OpenAPI definition :  
@@ -8,22 +17,22 @@ http://localhost:8080/actuator
 
 ### HAL Explorer
 http://localhost:8080/explorer/index.html#
-example :
-http://localhost:8080/explorer/index.html#uri=/actuator
-http://localhost:8080/explorer/index.html#uri=/users 
+- example :
+  - http://localhost:8080/explorer/index.html#uri=/actuator
+  - http://localhost:8080/explorer/index.html#uri=/users 
 
 ### h2 console
 http://localhost:8080/h2-console
-
 verify & connect
-jdbc url =jdbc:h2:mem:testdb
-username=sa
-password=password
-
-type query "select * from user" & Run
+- jdbc url =jdbc:h2:mem:testdb
+- username=sa
+- password=password
+type query & Run
+- "select * from user"
+- "select * from post"
 
 ------------------------------------------------------------------------------------------------------------------------
-### Topics Covered
+### reference
 
 - Learn Spring Boot
   - https://www.baeldung.com/spring-boot
@@ -60,13 +69,14 @@ type query "select * from user" & Run
   - https://www.baeldung.com/spring-rest-hal
 
 - Filtering - Static and dynamic
+  - https://www.baeldung.com/jackson-serialize-field-custom-criteria
 
 - Versioning - using - URI, query parameter, headers and produces
   - https://www.baeldung.com/rest-versioning
   
 - Basic Authentication
 
-- JPA 
+- JPA, Hibernate
   - Spring Boot With H2 Database : https://www.baeldung.com/spring-boot-h2-database
   - Spring Boot with Hibernate : https://www.baeldung.com/spring-boot-hibernate
   - Spring BeanCreationException : https://www.baeldung.com/spring-beancreationexception
