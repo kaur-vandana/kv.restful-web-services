@@ -16,6 +16,12 @@
 13. The best practices in designing RESTful web services
 
 ------------------------------------------------------------------------------------------------------------------------
+### Minimum SYSTEM SET UP
+- set JAVA_HOME system variable
+- download and install Intellij IDEA
+- download and install GIT & connect with gitHub
+
+------------------------------------------------------------------------------------------------------------------------
 # Useful Links
 
 ### Swagger UI :  
