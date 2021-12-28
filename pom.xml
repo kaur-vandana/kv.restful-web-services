@@ -81,7 +81,7 @@ configurations, class structure and various annotations.-->
 			<scope>test</scope>
 		</dependency>
 
-<!--Spring Boot With H2 Database-->
+<!--Spring Boot JPA With H2 Database-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
